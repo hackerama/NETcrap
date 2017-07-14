@@ -1,8 +1,8 @@
-# NETcrap
+# NETcrap - CVE 2017-7315 - Explorando o modem HGR100-L2 da NET
 
 <h3>Para rodar:</h3>
 
-	$ pytohon NETCrap.py -h
+	$ python NETCrap.py -h
 	
 	USAGE:  python NETcrap.py [GATEWAY]
      	 	 Ex:
