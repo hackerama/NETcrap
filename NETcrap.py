@@ -87,15 +87,3 @@ try:
 	print '[NETcrap] - Outras informacoes interessantes foram salvas no arquivo wifi.txt.\n'
 except:
 	pass
-
-def encontre(word):
-    arq = open('wifi.txt', 'r').readlines()
-    for item in arq:
-        if item.rfind(word) != -1:
-            trato = item.strip(' ')
-            if trato.startswith('"ssid" : "#'):
-                continue
-            else:
-                return trato
-
-
