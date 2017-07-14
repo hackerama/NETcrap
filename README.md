@@ -2,12 +2,14 @@
 
 <h3>Para rodar:</h3>
 
-	$ USAGE:  python NETcrap.py [GATEWAY]
-     	 	$ Ex:
-     		$ python NETcrap.py http://192.168.0.1
-     	 	$ python NETcrap.py http://192.168.0.1/
-     	 	$ python NETcrap.py 192.168.0.1     
-     	 	$ python NETcrap.py 192.168.0.1/
+	$ pytohon NETCrap.py -h
+	
+	USAGE:  python NETcrap.py [GATEWAY]
+     	 	 Ex:
+     		 python NETcrap.py http://192.168.0.1
+     	 	 python NETcrap.py http://192.168.0.1/
+     	 	 python NETcrap.py 192.168.0.1     
+     	 	 python NETcrap.py 192.168.0.1/
 
 <h3>Help-me :o</h3>
 
