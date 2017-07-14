@@ -1,7 +1,7 @@
 #!/usr/bin/python
-# Exploit: CVE 2017-7315
+# Exploit: CVE 2017-7315 (got by Gambler [br huehue])
 # Date: 12 July 2017
-# Exploit Author: Carlos Neri Correia
+# Exploit Script Author: Carlos Neri Correia
 # Author Contact: hackerama@protonmail.com
 
 import subprocess
