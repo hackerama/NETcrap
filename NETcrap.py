@@ -111,7 +111,7 @@ def main(gateway):
 
 print """
 +-----------------------------------------------------+
-|           NETcrep - Exploit CVE 2017-7315           |
+|           NETcrap - Exploit CVE 2017-7315           |
 +-----------------------------------------------------+
                  facebook.com/hacker4ma
 
