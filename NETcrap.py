@@ -119,7 +119,7 @@ Download privilegiado de arquivo de backup e bypass dos
 modems Humax Digital HG100R 2.0.6 (modems padrao da NET) 
 obtendo credenciais e outras informacoes sensiveis. 
 """
-SHODAN_API_KEY = "LukfB5l2v3MTAvTXDrBaOwj2CvO5tpk7"
+SHODAN_API_KEY = ""
 api = shodan.Shodan(SHODAN_API_KEY)
 
 if len(sys.argv) > 1:
