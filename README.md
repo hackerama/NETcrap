@@ -13,7 +13,7 @@
 
 <h3>Help-me :o</h3>
 
-Contribua com minha pesquisa! Plz, ajude a tornar este código mais rápido e eficinte. Tks!
+Contribua com minha pesquisa! Plz, ajude a tornar este código mais rápido e eficiente. Tks!
 
 desenvolvido por _carlosnericorreia_<br>
 email: hackerama@protonmail.com
